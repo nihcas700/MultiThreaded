@@ -2,13 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class TestSequentialMergeSort {
+public class TestMergeSort {
 
     public static void main(String[] args) {
         int size = 10000;
         for (int i = 0; i < 5; i++) {
             long start = System.currentTimeMillis();
-            if (runTest(size, new SequentialMergeSort())) {
+            if (runTest(size, new ParallelMergeSort())) {
                 System.out.println("Test Passed");
             } else {
                 System.out.println("Test Failed!!!!");
