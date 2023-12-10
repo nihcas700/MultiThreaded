@@ -10,11 +10,11 @@ public class ParallelMergeSort implements MergeSort {
 
     @Override
     public void sort(List<Integer> list) {
-        ForkJoinPool pool = new ForkJoinPool(4);
+        ForkJoinPool pool = ForkJoinPool.commonPool();
         if (list.size() == 0) {
             return;
         }
-        pool.invoke(new RecursiveSort(list, 0, list.size() - 1, 1000));
+        pool.invoke(new RecursiveSort(list, 0, list.size() - 1, 10000000));
     }
 
     public static class RecursiveSort extends RecursiveAction {
