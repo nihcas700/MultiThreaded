@@ -1,3 +1,5 @@
+package inmemory;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +8,7 @@ import java.util.Random;
 public class TestMergeSort {
 
     public static void main(String[] args) throws Exception {
-        BufferedWriter writer = new BufferedWriter(new FileWriter("./MergeSort/tst/TestMergeSortResult.txt"));
+        BufferedWriter writer = new BufferedWriter(new FileWriter("./MergeSort/tst/inmemory/TestMergeSortResult.txt"));
         int size = 100000000;
         writer.write("List Size:" + size + "\n");
         // Run parallel

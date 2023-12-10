@@ -1,4 +1,7 @@
-import java.util.ArrayList;
+package inmemory;
+
+import utils.Utils;
+
 import java.util.List;
 
 public class SequentialMergeSort implements MergeSort {

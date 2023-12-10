@@ -1,8 +1,8 @@
 List Size:100000000
 Running Parallel
 Test Passed
-The test took 30353 millis
+The test took 31236 millis
 =================================
 Running Sequential
 Test Passed
-The test took 80814 millis
+The test took 81735 millis

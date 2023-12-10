@@ -1,3 +1,5 @@
+package inmemory;
+
 import java.util.List;
 
 public interface MergeSort {
